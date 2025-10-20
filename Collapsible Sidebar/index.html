@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" href="circle.svg" type="image/svg+xml" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Responsive Collapsible Sidebar</title>
+  </head>
+  <body>
+    <aside class="sidebar" id="sidebar">
+      <div class="logo-section">
+        <div class="logo-placeholder">
+          <i class="fa-solid fa-circle-notch"></i>
+        </div>
+        <div class="logo-text">Sider</div>
+        <button class="close-btn" id="closeBtn" aria-label="Close sidebar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="nav-section">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon"><i class="fa-solid fa-users"></i></span>
+              <span class="nav-text">Users</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon"
+                ><i class="fa-solid fa-chart-simple"></i
+              ></span>
+              <span class="nav-text">Analytics</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon"><i class="fa-solid fa-headset"></i></span>
+              <span class="nav-text">Support</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+      <header class="header">
+        <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar">
+          ☰
+        </button>
+        <h1 style="margin-left: 20px; font-size: 18px; font-weight: 600">
+          Dashboard
+        </h1>
+      </header>
+      <div class="content-card">
+        <h1 class="content-title">Welcome to my First Task</h1>
+        <p class="content-text">
+          This is a responsive collapsible sidebar built with pure HTML, CSS,
+          and JavaScript. The sidebar features smooth transitions, responsive
+          behavior, and clean modern styling.
+        </p>
+        <p class="content-text">
+          On desktop, the sidebar is visible by default and can be toggled using
+          the hamburger menu. On mobile devices, the sidebar is hidden by
+          default and slides in from the left when opened.
+        </p>
+        <p class="content-text">
+          Try resizing your browser window to see how the sidebar adapts to
+          different screen sizes, or click the toggle button to see the smooth
+          slide animation in action.
+        </p>
+        <p class="content-text">Built with ♥ by DevCHiDI</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Blog</title>
+
+    <link rel="icon" href="public/circle.svg" type="image/svg+xml" />
+    s
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>My Personal Blog</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Weather Update</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="controls">
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search posts by title..."
+              id="searchInput"
+            />
+          </div>
+          <div class="category-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="tech">Tech</button>
+            <button class="filter-btn" data-category="travel">Travel</button>
+            <button class="filter-btn" data-category="food">Food</button>
+          </div>
+        </div>
+
+        <div class="posts-grid" id="postsGrid">
+          Posts will be dynamically inserted here
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none">
+          <h3>No posts found</h3>
+          <p>Try adjusting your search or filter criteria.</p>
+        </div>
+
+        <div class="pagination" id="pagination">
+          <button id="prevBtn">Previous</button>
+          <div class="page-info">
+            <span id="pageInfo">Page 1 of 1</span>
+          </div>
+          <button id="nextBtn">Next</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Built with ❤ by CHiDI</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
